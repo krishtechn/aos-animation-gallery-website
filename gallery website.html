@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <title>Gallery website using html and css</title>
+</head>
+<style>
+      * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+      }
+
+      .container {
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 255, 0.027);
+      }
+
+      .title h1 {
+            padding: 30px;
+            letter-spacing: 4px;
+            position: relative;
+            text-transform: capitalize;
+      }
+
+      .title h1::after {
+            content: '';
+            width: 100%;
+            margin: 0 auto;
+            height: 4px;
+            background-color: crimson;
+            position: absolute;
+            top: 70px;
+            left: 0;
+      }
+
+      .images {
+            width: 95%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            display: grid;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+      }
+
+      .images img {
+            width: 300px;
+            border-radius: 5px;
+            margin-top: 40px;
+            transition: 0.9s ease-in-out;
+      }
+
+      .images img:hover {
+            transform: scale(1.09);
+            cursor: pointer;
+            filter: grayscale(1);
+      }
+
+      @media screen and (max-width:1302px) {
+            .images {
+                  display: grid;
+                  margin: 0 auto;
+                  grid-template-columns: repeat(2, 1fr);
+            }
+
+            .images img {
+                  width: 90%;
+                  margin: 30px auto;
+            }
+      }
+
+      @media screen and (max-width:506px) {
+            .images {
+                  display: grid;
+                  margin: 0 auto;
+                  grid-template-columns: repeat(1, 1fr);
+            }
+
+            .images img {
+                  width: 90%;
+                  margin: 30px auto;
+            }
+
+            .title h1 {
+                  font-size: 19px;
+            }
+      }
+</style>
+
+<body>
+      <div class="container">
+            <div class="title">
+                  <h1>our gallery website</h1>
+            </div>
+            <div class="images">
+                  <img src="./image/mobile1.jpg" alt="" data-aos="fade-up">
+                  <img src="./image/mobile2.jpg" alt="" data-aos="fade-down">
+                  <img src="./image/mobile3.jpg" alt="" data-aos="fade-up">
+                  <img src="./image/mobile4.jpg" alt="" data-aos="flip-right">
+                  <img src="./image/mobile5.jpg" alt="" data-aos="flip-left">
+                  <img src="./image/camera1.jpg" alt="" data-aos="fade-up">
+                  <img src="./image/camera2.jpg" alt="" data-aos="flip-down">
+                  <img src="./image/camera3.jpg" alt="" data-aos="zoom-in">
+                  <img src="./image/headphone1.jpg" alt="" data-aos="zoom-in-up">
+                  <img src="./image/headphone2.jpg" alt="" data-aos="zoom-in-down">
+                  <img src="./image/headphone3.jpg" alt="" data-aos="zoom-in-left">
+                  <img src="./image/headphone4.jpg" alt="" data-aos="zoom-in-right">
+                  <img src="./image/camera3.jpg" alt="" data-aos="zoom-out">
+                  <img src="./image/camera3.jpg" alt="" data-aos="zoom-out-up">
+                  <img src="./image/watch1.jpg" alt="" data-aos="zoom-out-down">
+                  <img src="./image/watch2.jpg" alt="" data-aos="zoom-out-right">
+                  <img src="./image/watch3.jpg" alt="" data-aos="zoom-out-left">
+                  <img src="./image/camera1.jpg" alt="" data-aos="fade-up" data-aos-duration="3000">
+                  <img src="./image/camera2.jpg" alt="" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
+                  <img src="./image/camera3.jpg" alt="" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                  <img src="./image/shoe1.jpg" alt="" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                        data-aos-offset="500" data-aos-duration="500">
+                  <img src="./image/shoe2.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                  <img src="./image/headphone1.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                  <img src="./image/watch1.jpg" alt="" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                  <img src="./image/watch3.jpg" alt="" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                  <img src="./image/shoe3.jpg" alt="" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                  <img src="./image/mobile1.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                  <img src="./image/mobile3.jpg" alt="" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                  <img src="./image/mobile3.jpg" alt="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                  <img src="./image/shoe3.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                  <img src="./image/camera3.jpg" alt="" data-aos="flip-up">
+                  <img src="./image/camera3.jpg" alt="" data-aos="flip-down">
+                  <img src="./image/watch2.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                  <img src="./image/watch3.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                  <img src="./image/watch3.jpg" alt="" data-aos="zoom-out">
+                  <img src="./image/headphone1.jpg" alt="" data-aos="zoom-in">
+                  <img src="./image/watch3.jpg" alt="" data-aos="zoom-in-right">
+                  <img src="./image/shoe3.jpg" alt="" data-aos="zoom-in-left">
+                  <img src="./image/mobile1.jpg" alt="" data-aos="zoom-in-up">
+                  <img src="./image/mobile3.jpg" alt="" data-aos="zoom-in-down">
+            </div>
+      </div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+      AOS.init();
+</script>
+
+</html>
